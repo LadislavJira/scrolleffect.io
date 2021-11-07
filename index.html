@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Papeeeer</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Paper</a>
+        </header>
+        <img src="./images/background.jpg" class="bg">
+        <img src="./images/papir.png" class="paper">
+        <div class="content">
+            <h2>Všechno o  <br><span>PAPÍRU</span></h2>
+            <p>
+                Papír je tenký, hladký materiál vyráběný zhutněním vlákna.
+                Použitá vlákna jsou obvykle přírodní a založená na celulóze.
+                Nejobvyklejší materiál je buničina vyrobená ze dřeva, či ze sekundárních vláken, ale mohou být použity i jiné rostlinné vláknité materiály jako bavlna, a konopí, vlákna živočišná, ale i jiné alternativní suroviny, výjimečně sloní trus.
+                Trendem dnešního složení papíru je kromě celulózových materiálů příměs polymerů, zejména pro papíry pro tisk bankovek. Teplota samovznícení papíru dosahuje nad 185 °C.
+            </p>
+            <a href="#">Objednej si papír!</a>
+        </div>
+        <div class="text">
+            <div class="blok">
+                <h3>Historie</h3>
+                <p>
+                    Papír byl vynalezen někdy ve 3. tisíciletí př. n. l. v Číně, kde byl vyráběn z konopí a až v 1. století př. n. l. se začal papír vyrábět z hedvábných a lněných hadrů.
+                    Papír tak, jak ho známe dnes, byl vynalezen v Číně asi roku 105 n. l.
+                    Do Evropy se dostal prostřednictvím Arabů. První papírny proto vznikaly ve Španělsku, odkud se pak šířily do Itálie a Francie.
+                </p>
+            </div>
+            <div class="blok">
+                <h3>Výroba</h3>
+                <p>
+                    Nabírání papíroviny z kádě na čerpací formu. Původní čerpací formu tvořil laťový rám vyztužený žebry, na kterých bylo upevněno síto. Forma měla dvě části – síto a snímatelný rám – jeho výškou se řídila vrstva papíroviny a tím i gramáž papíru. Formy si mohl papírník vyrábět sám, ale vyráběli je také formaři.
+                </p>
+            </div>
+            <div class="blok">
+                <h3>Recyklace</h3>
+                <p>
+                    Papír patří mezi recyklovatelné materiály.
+                    V Česku se na jeho třídění používá modrý kontejner.
+                    Papír lze recyklovat i opakovaně, nicméně sedminásobná recyklace je na hranici technických možností a v praxi se této hranice nedosahuje.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector(".bg");
+            const paper = document.querySelector(".paper");
+            const content = document.querySelector(".content");
+
+            bg.style.width = 100 + e.pageX/100 + "%";
+            bg.style.height = 100 + e.pageX/100 + "%";
+
+            paper.style.right = 100 + e.pageX/2 + "px";
+
+            content.style.left = 100 + e.pageX/2.5 + "px";
+
+        })
+            
+    </script>
+</body>
+</html>
